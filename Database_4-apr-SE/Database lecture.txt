@@ -1,0 +1,515 @@
+Database:- Database is used to store large amount of data 
+
+SQL:- Structured Query Language
+
+--> It is used to store data in a structured format using rows and columns 
+
+XAMPP- mysql server
+
+
+
+Database Creation:-
+
+CREATE DATABASE 4apr_SE
+
+
+
+
+To show database:-
+
+SHOW DATABASES
+
+
+
+
+Table Creation:-
+CREATE TABLE candidates
+(
+    
+    c_id int,
+    c_name varchar(40),
+    c_address varchar(40)
+   
+)
+
+
+
+
+
+Insertion of data:-
+
+INSERT INTO candidates(c_id,c_name,c_address) VALUES(1,"Khushal","Rajasthan");
+INSERT INTO candidates(c_id,c_name,c_address) VALUES(2,"Himanshu","Siddhpur");
+INSERT INTO candidates(c_id,c_name,c_address) VALUES(3,"Om","Ahmedabad");
+INSERT INTO candidates(c_id,c_name,c_address) VALUES(4,"Vansh","Sanosara");
+INSERT INTO candidates(c_id,c_name,c_address) VALUES(5,"Manav","Rajkot");
+
+
+
+
+
+To change the name of column:-
+
+ALTER TABLE candidates CHANGE c_id candidate_id int
+
+
+
+To change the name of table:-
+
+ALTER TABLE myntra RENAME category;
+
+
+
+To add column in table:-
+
+ALTER TABLE candidates ADD c_department varchar(50)
+
+
+
+To delete column in table:-
+ALTER TABLE candidates DROP COLUMN columnname
+
+
+
+
+Update values in table:-
+
+UPDATE candidates SET c_address="Mumbai" WHERE candidate_id=3
+
+UPDATE candidates SET c_name="Himanshi" WHERE candidate_id=2
+
+
+
+
+
+Delete value from table:-
+
+DELETE FROM candidates WHERE candidate_id=5
+
+
+
+
+To delete all the values from table:-
+
+TRUNCATE TABLE candidates
+
+
+
+
+To delete the whole table:-
+
+DROP TABLE candidates
+
+
+
+
+Interview question:-
+
+Difference Between drop and truncate:-
+
+Truncate will only delete the values of table but drop will delete the whole table 
+
+
+
+Task:-
+
+Create table employee and add following details:-
+
+1) Employee id
+
+2) Employee name
+
+3) Employee department
+
+4) Employee salary
+
+
+
+
+
+
+
+
+Keys in sql:-
+
+1) Primary Key:- Primary key is a constraint in sql that identifies unique
+value in table
+
+---> One table has only one primary key 
+
+CREATE DATABASE 4apr_myntra
+
+Auto_increment
+
+
+
+
+CREATE TABLE category
+(
+    c_id int PRIMARY KEY AUTO_INCREMENT,
+    c_name varchar(40)
+       
+)
+
+
+
+2) Foriegn Key:-
+
+--> Foriegn key is a constraint in sql that refers to the primary key of another table 
+--> One table can have more than one foriegn key
+
+
+
+CREATE TABLE subcategory
+(
+    subcate_id int PRIMARY KEY AUTO_INCREMENT,
+    subcate_name varchar(40),
+    
+    cate_id_fk int,
+    FOREIGN KEY(cate_id_fk) REFERENCES category(c_id)
+    
+)
+
+
+CREATE TABLE product
+(
+    prd_id int PRIMARY KEY AUTO_INCREMENT,
+    prd_name varchar(40),
+    prd_price varchar(40),
+    prd_desc_price varchar(40),
+    
+    cate_id_fk int,
+    subcate_id_fk int,
+    
+    FOREIGN KEY(cate_id_fk) REFERENCES category(c_id),
+    FOREIGN KEY(subcate_id_fk) REFERENCES subcategory(subcate_id)
+        
+)
+
+
+
+
+
+
+
+
+
+
+
+CREATE DATABASE bollywood_db
+
+
+CREATE TABLE movies
+(
+    
+    movie_id int PRIMARY KEY AUTO_INCREMENT,
+    movie_name varchar(40),
+    movie_review varchar(40)
+    
+)
+
+
+CREATE TABLE celebrity
+(
+   celebrity_id int PRIMARY KEY AUTO_INCREMENT,
+   celebrity_name varchar(40),
+    
+   movie_id_fk int,
+    
+   FOREIGN KEY(movie_id_fk) REFERENCES movies(movie_id)
+    
+    
+    
+)
+
+
+
+
+
+
+
+Select Queries:-
+
+* - universal
+
+SELECT * FROM product WHERE prd_name="Shirts"
+
+SELECT * FROM product WHERE prd_price=1500
+
+SELECT * FROM product WHERE prd_desc_price=300
+
+SELECT * FROM product WHERE prd_name="Diapers"
+
+SELECT prd_name FROM product
+
+SELECT prd_desc_price FROM product
+
+SELECT prd_name,prd_price FROM product
+
+SELECT prd_price FROM product WHERE prd_price>1500
+
+SELECT prd_price,prd_name FROM product WHERE prd_price>1500
+
+SELECT * FROM product WHERE prd_desc_price<500
+
+SELECT * FROM product WHERE prd_price BETWEEN 1500 AND 3000
+
+Aggregate Functions:-
+
+count- SELECT COUNT(prd_id) FROM product
+max-  SELECT MAX(prd_price) FROM product
+min-   SELECT MIN(prd_desc_price) FROM product
+sum- SELECT SUM(prd_price) FROM product
+avg-  SELECT AVG(prd_price) FROM product
+
+Alias-- To make different column name temporary- as
+
+SELECT SUM(prd_price) AS total_price FROM product
+
+
+Task:- Create tabe student and add stu_id, stu_name,stu_subject,stu_marks and find total number
+of students in class, find total marks and find average marks of student
+
+
+
+
+
+Like and Wildcards
+
+Like Operator
+
+Wildcard:- To decide the character is present or not
+
+SELECT * FROM product WHERE prd_name LIKE 'D%'
+
+SELECT * FROM product WHERE prd_name LIKE '%s'
+
+SELECT * FROM product WHERE prd_name LIKE '_r%'
+
+SELECT * FROM product WHERE prd_name LIKE 'D%s'
+
+SELECT * FROM product WHERE prd_name NOT LIKE 'D%'
+
+
+Joins:-
+
+---> Joins is used to join two or more tables based on related columns 
+
+1)Inner Join:- It returns all the matching records from table 
+
+SELECT category.cate_name,subcategory.subcate_name FROM category
+JOIN subcategory ON category.cate_id=subcategory.cate_id_fk
+
+
+SELECT category.cate_name,subcategory.subcate_name,product.prd_name,product.prd_price,product.prd_desc_price FROM category
+JOIN subcategory ON category.cate_id=subcategory.cate_id_fk
+JOIN product ON category.cate_id=product.subcate_id_fk
+
+2) Left Join:- It returns all records from left table and only matching records from right table 
+
+SELECT movies.movie_name,movies.movie_review,celebrity.celebrity_name FROM movies
+LEFT JOIN celebrity ON movies.movie_id=celebrity.movie_id_fk
+
+3) Right Join:- It returns all records from right table and only matching records from left table 
+
+SELECT movies.movie_name,movies.movie_review,celebrity.celebrity_name FROM movies
+Right JOIN celebrity ON movies.movie_id=celebrity.movie_id_fk
+
+
+ORDER BY:-
+
+ASC- Ascending
+DESC- Descending 
+
+SELECT * FROM product ORDER BY prd_price ASC
+
+SELECT * FROM product ORDER BY prd_price DESC
+
+
+
+
+Inbuilt sql functions:-
+
+Date-time functions:-
+
+date-SELECT curdate()
+time-SELECT curtime()
+both-SELECT now()
+
+string functions:-
+
+SELECT concat("Manav","Gathani")
+
+SELECT concat(fname," ",lname) AS fullname FROM students 
+
+SELECT reverse("manav")
+
+SELECT lower("MANAV")
+
+SELECT upper("manav")
+
+SELECT char_length("manav")
+
+Distinct keyword:- unique values from table
+SELECT DISTINCT age from students
+SELECT DISTINCT fname, age FROM students
+SELECT COUNT(DISTINCT age) FROM students
+
+
+
+
+Task:- create table hospital and add child id, child name, child current date and time of birth
+
+
+
+
+
+
+Procedures in sql
+
+CREATE DATABASE kunal_procedure
+
+CREATE TABLE candidates
+(
+ 	c_id int,
+    c_name varchar(50)
+    
+    
+    
+    
+)
+
+DELIMITER $$
+
+CREATE PROCEDURE insertdata()
+BEGIN
+
+
+INSERT INTO candidates(c_id,c_name) VALUES(1,"Kunal");
+
+
+
+END
+
+
+
+CALL insertdata();
+CALL insertdata();
+CALL insertdata();
+CALL insertdata();
+CALL insertdata();
+
+
+DELIMITER $$
+
+CREATE PROCEDURE insertdiffData(i int, j varchar(50))
+BEGIN
+
+
+INSERT INTO candidates(c_id,c_name) VALUES(i,j);
+
+
+END
+
+
+CALL insertdiffData(2,"Manav");
+CALL insertdiffData(3,"Himanshu");
+CALL insertdiffData(4,"Om");
+CALL insertdiffData(5,"Vansh");
+
+
+
+
+
+
+
+
+
+Triggers in sql:-
+
+
+
+
+CREATE TABLE candidates
+(
+ 	c_id int,
+    c_name varchar(50)
+    
+    
+    
+    
+)
+
+CREATE TABLE test
+(
+    
+    id int,
+    name varchar(50),
+    date_time timestamp,
+    action_performed varchar(50)
+    
+    
+    
+)
+
+insert trigger:-
+
+DELIMITER $$
+
+CREATE TRIGGER insert_trigger AFTER INSERT ON candidates FOR EACH ROW
+BEGIN
+
+
+INSERT INTO test(id,name,action_performed) VALUES(new.c_id,new.c_name,"Record Inserted!");
+
+
+
+
+END
+
+
+
+
+Update Trigger:-
+
+DELIMITER $$
+CREATE TRIGGER update_trigger AFTER UPDATE ON candidates FOR EACH ROW
+BEGIN
+
+
+INSERT INTO test(id,name,action_performed) VALUES(new.c_id,new.c_name,"Record Updated!");
+
+
+
+END
+
+
+
+
+
+Delete Trigger:-
+
+
+DELIMITER $$
+CREATE TRIGGER delete_trigger AFTER DELETE ON candidates FOR EACH ROW
+BEGIN
+
+
+INSERT INTO test(id,name,action_performed) VALUES(old.c_id,old.c_name,"Record Deleted!");
+
+
+
+
+END
+
+
+
+
+SELECT * FROM product LIMIT 2
+
+SELECT * FROM product LIMIT 1
+
+
+
+College Management System
+Library Management System
