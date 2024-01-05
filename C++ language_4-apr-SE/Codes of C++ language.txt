@@ -1,0 +1,1109 @@
+print the value:-
+
+Ex:-
+code:-
+
+#include<iostream>
+using namespace std;
+main()
+{
+	int a=67;
+	cout<<"The value of a is "<<a;
+}
+
+
+
+
+
+
+
+
+Add two numbers:-
+code:-
+
+#include<iostream>
+using namespace std;
+main()
+{
+	int a=67,b=45;
+	cout<<a+b;
+}
+
+
+
+
+
+
+
+
+user i/p:-
+code:-
+
+#include<iostream>
+using namespace std;
+main()
+{
+	int a,b;
+	cout<<"Enter the value of a:- ";
+	cin>>a;
+	cout<<"The value of a is "<<a;
+}
+
+
+
+
+
+
+
+multiplication of two numbers:-
+code:-
+
+#include<iostream>
+using namespace std;
+main()
+{
+	int a,b;
+	cout<<"Enter the value of a:- ";
+	cin>>a;
+	cout<<"Enter the value of b:- ";
+	cin>>b;
+	cout<<a*b;
+}
+
+
+
+
+
+
+Switch case
+code:-
+
+#include<iostream>
+using namespace std;
+main()
+{
+	int a,b;
+	char o;
+	cout<<"Enter a operator between (+,-,*,/):- ";
+	cin>>o;
+	cout<<"Enter the value of a:- ";
+	cin>>a;
+	cout<<"Enter the value of b:- ";
+	cin>>b;
+	switch(o)
+	{
+		case '+':
+			cout<<a+b;
+			break;
+		case '-':
+			cout<<a-b;
+			break;
+		case '*':
+			cout<<a*b;
+			break;
+		case '/':
+			cout<<a/b;
+			break;
+		default:
+			cout<<"Error! Enter a operator between (+,-,*,/)";
+	}
+}
+
+
+
+
+
+
+
+
+Count the total Even or odd number:-
+code:-
+
+#include<iostream>
+using namespace std;
+main()
+{
+	int m[10],i,even=0,odd=0;
+	for(i=0;i<10;i++)
+	{
+		cout<<"Enter element ";
+		cout<<i+1;
+		cout<<":- ";
+		cin>>m[i];
+	}
+	for(i=0;i<10;i++)
+    {
+        if(m[i]%2==0)
+        {
+        	even++;
+    	}
+        else
+        {
+        	odd++; 
+		}
+    }
+    cout<<"Even:- ";
+    cout<<even;
+    cout<<"\n";
+    cout<<"Odd:- ";
+    cout<<odd;
+}
+
+
+
+
+
+
+
+
+Class and objects
+Ex:-
+code:-
+
+#include<iostream>
+using namespace std;
+class student
+{
+	public:
+		int age=34;		
+};
+main()
+{
+	student obj;
+	cout<<obj.age;
+}
+
+
+
+
+
+
+
+employee class and object
+code:-
+
+#include<iostream>
+using namespace std;
+class em
+{
+	public:
+		string name="kunal";
+		int age=34;
+		int id=23;
+		
+};
+main()
+{
+	em obj;
+	cout<<"name:- "<<obj.name;
+	cout<<"\n";
+	cout<<"age:- "<<obj.age;
+	cout<<"\n";
+	cout<<"id:- "<<obj.id;
+}
+
+
+
+
+
+
+
+Method:-
+Ex:-
+code:-
+
+#include<iostream>
+using namespace std;
+class student
+{
+	public:
+		int id;
+		string name;
+		void inputData()
+		{
+			cout<<"Enter your id:- ";
+			cin>>id;
+			cout<<"Enter your name:- ";
+			cin>>name;
+		}
+		void displayData()
+		{
+			cout<<"Id:- "<<id;
+			cout<<"\nName:- "<<name;
+		}
+};
+main()
+{
+	student s1;
+	s1.inputData();
+	s1.displayData();
+}
+
+
+
+
+
+
+
+
+
+Employee name, id, salary user print
+code:-
+
+#include<iostream>
+using namespace std;
+class em
+{
+	public:
+		int id;
+		string name;
+		int salary;
+		void inputData()
+		{
+			cout<<"Enter your id:- ";
+			cin>>id;
+			cout<<"Enter your name:- ";
+			cin>>name;
+			cout<<"Enter your salary:- ";
+			cin>>salary;
+		}
+		void displayData()
+		{
+			cout<<"Id:- "<<id;
+			cout<<"\nName:- "<<name;
+			cout<<"\nSalary:- "<<salary;
+		}
+};
+main()
+{
+	em e1;
+	e1.inputData();
+	e1.displayData();
+}
+
+
+
+
+
+
+
+
+Constructor:-
+Ex:-
+code:-
+
+#include<iostream>
+using namespace std;
+class student
+{
+	public:
+		student() // Constructor
+		{
+			cout<<"Hello and welcome to the constructor";
+		}
+};
+main()
+{
+	student s1=student();
+}
+
+
+
+
+
+
+
+
+parameterise of constructor:-
+code:-
+
+#include<iostream>
+using namespace std;
+class student
+{
+	public:
+		student() // Constructor
+		{
+			cout<<"Hello and welcome to the constructor";
+		}
+		student(int a, int b)
+		{
+			cout<<"\na = "<<a;
+			cout<<"\nb = "<<b;			
+		}
+};
+main()
+{
+	student s1=student();
+	student s2=student(10,20);
+}
+
+
+
+
+
+
+
+
+This pointer:-
+code:-
+
+#include<iostream>
+using namespace std;
+class student
+{
+	public:
+		int a,b;
+		void inputdata(int a, int b)
+		{
+			this->a = a;
+			this->b = b;
+		}
+		void displaydata()
+		{
+			cout<<"\n a = "<<a;
+			cout<<"\n b = "<<b;
+		}
+};
+main()
+{
+	student s1;
+	s1.inputdata(10,20);
+	s1.displaydata();
+}
+
+
+
+
+
+
+
+
+
+Encapsulation:-
+code:-
+
+#include<iostream>
+using namespace std;
+class student
+{
+	public:
+		int id;
+		string name;
+		string subject;
+		void setid(int id)
+		{
+			this->id=id;
+		}
+		int getid()
+		{
+			return this->id;
+		}
+		void setname(string name)
+		{
+			this->name=name;
+		}
+		string getname()
+		{
+			return this->name;
+		}
+		void setsubject(string subject)
+		{
+			this->subject=subject;
+		}
+		string getsubject()
+		{
+			return this->subject;
+		}
+		
+};
+main()
+{
+	student s1;
+	s1.setid(1);
+	cout<<s1.getid();
+	s1.setname("\nkunal");
+	cout<<s1.getname();
+	s1.setsubject("\npython");
+	cout<<s1.getsubject();
+}
+
+
+
+
+
+
+
+
+Array within class:-
+code:-
+
+#include<iostream>
+using namespace std;
+class student
+{
+	public:
+		int id;
+		string name;
+		int marks[5]; // Array within class
+		void input()
+		{
+			cout<<"Enter id:- ";
+			cin>>id;
+			cout<<"Enter name:- ";
+			cin>>name;
+			for(int i=0;i<5;i++)
+			{
+				cout<<"marks:- ";
+				cin>>marks[i];
+			}
+		}
+		void display()
+		{
+			cout<<"\nid:- "<<id;
+			cout<<"\nname:- "<<name;
+			for(int i=0;i<5;i++)
+			{
+				cout<<"\nmarks:- "<<marks[i];
+			}
+		}
+};
+main()
+{
+	student s1;
+	s1.input();
+	s1.display();
+}
+
+
+
+
+Array within class
+Ex:-
+code:-
+
+#include<iostream>
+using namespace std;
+class student
+{
+	public:
+		int id;
+		string name;
+		int marks[5]; // Array within class
+		void input()
+		{
+			cout<<"Enter id:- ";
+			cin>>id;
+			cout<<"Enter name:- ";
+			cin>>name;
+			for(int i=0;i<5;i++)
+			{
+				cout<<"marks:- ";
+				cin>>marks[i];
+			}
+		}
+		void display()
+		{
+			cout<<"\nid:- "<<id;
+			cout<<"\nname:- "<<name;
+			for(int i=0;i<5;i++)
+			{
+				cout<<"\nmarks:- "<<marks[i];
+			}
+		}
+};
+main()
+{
+	student s1[3];
+	for(int i=0;i<3;i++)
+	{
+		s1[i].input();
+	}
+	for(int i=0;i<3;i++)
+	{
+		s1[i].display();
+	}
+	
+}
+
+
+
+
+
+
+
+
+Inheritance:- Single level Inheritance:-
+Ex:-
+code:-
+
+#include<iostream>
+using namespace std;
+class father
+{
+	public:
+		void house()
+		{
+			cout<<"Have 3BHK house";
+		}
+};
+class son: public father
+{
+	public:
+		void car()
+		{
+			cout<<"\nAudi car";
+		}
+};
+main()
+{
+	son obj;
+	obj.house();
+	obj.car();
+}
+
+
+
+
+
+
+
+Inheritance:- Multilevel Inheritance:-
+Ex:-
+code:-
+
+#include<iostream>
+using namespace std;
+class grandfather
+{
+	public:
+		void land()
+		{
+			cout<<"100 Acres of land";
+		}
+};
+class father: public grandfather
+{
+	public:
+		void house()
+		{
+			cout<<"\n5BHK house";
+		}
+};
+class son: public father
+{
+	public:
+		void car()
+		{
+			cout<<"\nMercedez car";
+		}
+};
+main()
+{
+	son obj;
+	obj.land();
+	obj.house();
+	obj.car();
+}
+
+
+
+
+
+
+
+
+Inheritance:- Multiple Inheritance:-
+Ex:-
+code:-
+
+#include<iostream>
+using namespace std;
+class father
+{
+	public:
+		void fishing()
+		{
+			cout<<"Learn Fising";
+		}
+};
+class mother
+{
+	public:
+		void cooking()
+		{
+			cout<<"\nLearn cooking";
+		}
+};
+class son: public father, public mother
+{
+	public:
+		void coding()
+		{
+			cout<<"\nLearn Coding";
+		}
+};
+main()
+{
+	son obj;
+	obj.fishing();
+	obj.cooking();
+	obj.coding();
+}
+
+
+
+
+
+Inheritance Hierarchical Inheritance:-
+Ex:-
+code:-
+
+#include<iostream>
+using namespace std;
+class animal
+{
+	public:
+		void info()
+		{
+			cout<<"\nI am animal";
+		}
+};
+class dog: public animal
+{
+	public:
+		void bark()
+		{
+			cout<<"\nDog is braking";
+		}
+};
+class cat: public animal
+{
+	public:
+		void meow()
+		{
+			cout<<"\ncat";
+		}
+};
+main()
+{
+	dog d1;
+	d1.info();
+	d1.bark();
+	
+	cat c1;
+	c1.info();
+	c1.meow();
+}
+
+
+
+
+
+
+
+
+Inheritance:- Hybrid Inheritance:-
+Ex:-
+code:-
+
+#include<iostream>
+using namespace std;
+class grandfather
+{
+	public:
+		void house()
+		{
+			cout<<"\n10 BHK house";
+		}
+};
+class father: public grandfather
+{
+	public:
+		void land()
+		{
+			cout<<"\n2000 Acres of land";
+		}
+};
+class mother
+{
+	public:
+		void gold()
+		{
+			cout<<"\n100kg gold";
+		}
+};
+class son: public father, public mother
+{
+	public:
+		void car()
+		{
+			cout<<"\nRoles royce";
+		}
+};
+main()
+{
+	son obj;
+	obj.house();
+	obj.land();
+	obj.gold();
+	obj.car();
+}
+
+
+
+
+
+
+
+
+Polymorphism:- Function Overloading:-
+Ex:-
+code:-
+
+#include<iostream>
+using namespace std;
+int sum(int a,int b)
+{
+	return a+b;
+}
+int sum(int a,int b,int c)
+{
+	return a+b+c;
+}
+float sum(float a,float b)
+{
+	return a+b;
+}
+char sum(char a, char b)
+{
+	return a+b;
+}
+string sum(string a, string b)
+{
+	return a+b;
+}
+main()
+{
+	cout<<"Int:- "<<sum(10,20);
+	cout<<"\nInt:- "<<sum(10,20,30);
+	cout<<"\nFloat:- "<<sum(45.3f,23.78f);
+	cout<<"\nChar:- "<<sum(" d"," s");
+	cout<<"\nString:- "<<sum("kunal"," deora");
+}
+
+
+
+
+
+
+
+
+Polymorphism:- Function Overriding:-
+Ex:-
+code:-
+
+#include<iostream>
+using namespace std;
+class Animal
+{
+	public:
+		void eat()
+		{
+			cout<<"Eating";
+		}
+};
+class Dog: public Animal
+{
+	public:
+		void eat()
+		{
+			cout<<"Eating roti";
+		}
+};
+main()
+{
+	Dog d=Dog();
+	d.eat();
+}
+
+
+
+
+
+
+
+
+File Handling:- create file in C language:-
+code:-
+
+#include<stdio.h>
+main()
+{
+	FILE * file1;
+	file1=fopen("tops.txt","w");
+}
+
+
+
+
+File Handling:- (w- Write mode) in C language:-
+code:-
+
+#include<stdio.h>
+main()
+{
+	FILE * file1;
+	file1=fopen("tops.txt","w");
+	char data[20]="kunal";
+	fprintf(file1,"%s",data);
+}
+
+
+
+
+File Handling:- (r- Read mode) in C language:-
+code:-
+
+#include<stdio.h>
+main()
+{
+	FILE *file1;
+    file1=fopen("tops.txt","r");
+	char data[20];
+	fscanf(file1,"%s",&data);
+	printf("%s",&data);
+}
+
+
+
+
+File Handling:- (w- Write, r- Read) in C language:-
+code:-
+
+#include<stdio.h>
+main()
+{
+	FILE *file1;
+	char data[20];
+	printf("enter data :- ");
+	scanf("%s",data);
+	file1=fopen("tops.txt","w");
+	fprintf(file1,"%s",data);
+	
+	file1=fopen("tops.txt","r");
+	fscanf(file1,"%s",&data);
+	printf("%s",&data);
+}
+
+
+
+
+File Handling:- (a- Append mode) in C language:-
+code:-
+
+#include<stdio.h>
+main()
+{
+	FILE *file1;
+	char data[20];
+	printf("enter data :- ");
+	scanf("%s",data);
+	file1=fopen("tops.txt","a");
+	fprintf(file1,"%s",data);
+	fclose(file1);
+	
+	file1=fopen("tops.txt","r");
+	fscanf(file1,"%s",&data);
+	printf("%s",&data);
+}
+
+
+
+
+File Handling:- create file in C++ language:-
+code:-
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+main()
+{
+	ofstream file1;
+	file1.open("text.txt");
+}
+
+
+
+
+File Handling:- (w- Write mode) in C++ language:-
+code:-
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+main()
+{
+	ofstream file1;
+	file1.open("text.txt");
+	string data;
+	cout<<"enter data :-";
+	cin>>data;
+	file1<<data;
+}
+
+
+
+
+File Handling:- (a- Append mode) in C++ language:-
+code:-
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+main()
+{
+	ofstream file1;
+	string data;
+	file1.open("text.txt",ios::app);
+	
+
+	cout<<"Enter data:-";
+	cin>>data;
+	
+	file1<<data;
+	file1.close();
+
+	ifstream file2;
+	file2.open("text.txt");
+	file2>>data;
+	cout<<data;
+}
+
+
+
+
+File Handling:- (r- Read mode) in C++ language:-
+code:-
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+main()
+{
+	string data;
+	ifstream file1;
+	file1.open("test.txt");
+	file1>>data;
+	cout<<data;
+	
+}
+
+
+
+
+File Handling:- (w- Write, r- Read) in C++ language:-
+code:-
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+main()
+{
+	ofstream file1;
+	file1.open("test.txt");
+	string data;
+	cout<<"Enter data:- ";
+	cin>>data;
+	file1<<data;
+	cout<<data;	
+}
+
+
+
+
+
+
+
+
+Inline function
+Ex:-
+code:-
+
+#include<iostream>
+using namespace std;
+inline int cube(int x)
+{
+	int result=x*x*x;
+	return result;
+}
+main()
+{
+	int x=2;
+	cout<<"Cube is:- "<<cube(x);
+}
+
+
+
+
+
+
+
+
+Friend function:-
+Ex:-
+code:-
+
+#include<iostream>
+using namespace std;
+class a
+{
+	private:
+		int x,y;
+	public:
+		friend void setdata();
+};
+void setdata()
+{
+	a obj;
+	obj.x=10;
+	obj.y=20;
+	cout<<"X = "<<obj.x<<endl;
+	cout<<"Y = "<<obj.y<<endl;
+}
+main()
+{
+	setdata();
+}
+
+
+
+
+
+
+
+Templates:-
+swapping:-
+code:-
+
+#include<iostream>
+using namespace std;
+template <class T>
+void swapping(T &a, T &b)
+{
+	T t=a;
+	a=b;
+	b=t;
+}
+main()
+{
+	char a='A', b='B';
+	int x=10, y=20;
+	cout<<"Before swap A:- "<<a<<" | B:"<<b<<endl;
+	swapping(a,b);
+	cout<<"After swap A:- "<<a<<" | B:"<<b<<endl;
+	
+	cout<<"Before swap X:- "<<x<<" | Y:"<<y<<endl;
+	swapping(x,y);
+	cout<<"Before swap X:- "<<x<<" | Y:"<<y<<endl;
+}

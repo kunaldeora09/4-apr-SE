@@ -1,0 +1,198 @@
+C++:- 
+C plus one
+C++ is a higher level programming language which uses classes and objects
+
+History of C:- 
+C++ was created by  Bjarne stroustrup in 1992 at bell lab. california
+C with objects
+C++ is an objects oriented programming language. it supports classes and objects
+
+Interviwe Question:-
+ 
+Difference between C and C++ ?
+C++ supports classes and objects, while C does not support
+
+Real World application of C++:-
+1. Desktop application
+2. GUI based application
+3. Compilers
+4. Banking application
+5. Games 
+6. Web Browsers
+
+Syntax:- 
+
+#- Predifined
+include- To add something
+iostream- i/p o/p stream- header file
+using namespace std- We can use variables as name
+
+main()
+{
+	code...
+}
+
+
+Cout- To print something on console screen
+
+Classes and objects
+Encapsulation
+Constructor
+Polymorphism
+Function Overloading
+Templates
+file handling- C and C++
+
+
+
+Class and objects:-
+Class:- Class is a user  defined data type which contain data member
+and member function in a single entity
+
+data member- Variable
+member function- methods
+Objects:- Objects is a instance of a class or objects is a identify or class
+
+class car
+
+objects:- mercedez, volvo, audi
+We can access the properties of class using object
+
+Syntax:-
+		class classname
+		{
+			Data member
+			Member function
+		};
+
+
+
+Access Specifiers:-
+1. Public:- We can access all properties outside the class
+2. private:- We can access only inside the class
+
+By default the class is in private mode.
+
+method
+
+Interviwe Question ( Difference between method and function )
+
+Function:- Function will decliare inside the class
+
+Method:- Method will declare inside the class
+
+datatype methodname()
+
+
+constructor: -
+constructorv is  a special member fucntion which is used to contain data mamber and member function 
+
+which is call automacticlly
+there is no need to access manually
+when we create object of class it will automatically call
+
+---->there is two types of construtor:-
+
+1. default constructor :-
+ 
+constructor name and class namem both are same 
+
+default constructor does not contain parameters
+
+
+2. parameters constructor :- 
+which is contain parameter
+make sure constructor always create in public mode
+we can't create constructor in privet mode
+
+
+encapsulation :- 
+once class contain similaer data element in a single entitiy is called encapsulation
+1 setter : to set the value
+2 getter : to get the value
+
+
+
+Inheritance:- When one class inherits the properties of another class is called inheritance
+Base class:- Parent class
+Derived class:- Child class
+
+Types of Inheritance:-
+1. Single level Inheritance:-
+
+		Class A
+		   |
+		Class B
+
+2. Multilevel Inheritance:-
+
+		Class A
+		   |
+		Class B
+		   |
+		Class C
+
+3. Multiple Inheritance:-
+The inheritance in which a class can be derived from more than one class can have more than one base class in known as multiple inheritance
+
+		Base Class 1			Base Class 2
+			\					/
+			 \				    /
+			  \				   /
+				  Child Class
+
+
+4. Hierarchical Inheritance:- Hierarchical Inheritance is one base class and more than one derived class
+
+					   Class  A
+					/	       \
+				    / 	        \
+			    Class B	    		  Class C
+				/	  \			/		\
+			CLass D	  Class E	  Class F   Class G
+
+
+5. Hybrid Inheritance:- It is a combination of one or more inheritance.
+
+
+
+
+
+Polymorphism:-
+Polymorphism Derives from greek word. Poly means many and morphism means forms. So ployphism means many form. one class have different forms
+
+Two types of Polymorphism:-
+
+1. Function Overloading:- If the function having the same name but different parameters is called function overloading.
+2. Function Overriding:- If derived class defines same function as defined in its base class, it is known as function overriding.
+
+
+
+
+
+File Handling:- File Handling is a concept in which we can create, read, write and append in a file using C and C++
+
+Modes:-
+r- Read mode
+w- Write mode
+a- Append mode
+
+Datatype:- FILE
+
+
+
+Inline Function:-
+The inline function function are a C++ freature to increase the execution time of a program.
+Function can be instructed to compiler to make them inline so that compiler can replace those function definition wherver those are being called.
+
+=> When a function is declared as inline, the compiler replaces the function call with the actual function code at the pointe where the function is called.
+
+
+
+Friend function:- 
+=> A friend function of class is defined outside that class but it has right to access all private and protected members of the class.
+
+
+Templates in C++:-
+Templates are powerful feature which allows you to write generic programs. In simple terms, you can create a single function or class that work different data types using templates. it also provides reusability
+=> It is used for multiple data types.
