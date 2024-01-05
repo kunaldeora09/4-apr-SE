@@ -1,0 +1,996 @@
+Software engineering:-
+Module-1: Overview of IT industry
+Module-2: C programming- fundamental of programming
+Module-3: Oop- C++
+Module-4: Database
+
+
+
+
+What is computer?
+=> Computer is an electronic device that makes human life easier and faster.
+
+Uses of computers:-
+Offices, Shops, Bank, Restaurants, Hospitals, schools and colleges, industries, malls.
+
+Computer:-
+1. Hardware:- The part which we can touch physical.
+Ex. Keyboard, monitor, mouse, CPU, DVD drive.
+
+2. Software:- The software is a part of computer that we cannot touch physically.
+Ex. VLC, vscode, devC/C++, powerpoint, notepad.
+
+
+
+
+Programming language:-
+C
+C++
+Python
+Java
+Js
+Php
+Perl
+Linux
+Prolog
+
+
+
+
+World Wide Web (www):-
+- Known as a web.
+- Is a collenction of website or web pages stored in web servers.
+- Connected to local computers through the internet.
+- These websites contain text pages, digital images, audios, videos, etc.
+- Users can access the content of these sites from any part of the world using computers, laptops, cell phones, etc.
+- The WWW, along  with internet, enables the retrieval and display of text and media to your device.
+
+
+
+
+WWW - How internet works?
+- A server is where websites are stored, and it works a lot like your computer's hard drive.
+- Once the request arrives, the server retrieves the website and sends the correct data back to your computer.
+- One  of the best features of the internet is the ability to communicate almost instantls with anyone in the world.
+- Email is one of the oldest and most universal ways to communicate and share information on the internet, and bilions of people use it. Social media allows people to connect in a variety of ways and build communities online.
+
+
+
+
+
+Clinet- server communication 
+1. Client "sometimes on"
+- Intiates a request to the server when interested
+- Ex. web browser on your laptop or cell phone
+- Doesn't communicate directly with other clients
+- needs to know the server's address
+
+2. Server is "always on"
+- Services requests frome many client hosts
+- Ex. Wev server for the www.example.com web site
+- Doesn't initiate contract with the clients
+- Needs a fixed, well-known address
+
+
+
+
+Types of internet connection
+1. Digital subscriber line (DSL)
+2. Cable internet
+3. Fiber optic
+4. Satellite internet
+5. Wireless
+6. Broadband over powerlines (BPL)
+
+
+
+
+Major applications of the internet
+- 4 major applications of internet, which are given below.
+1. Social media internet applications
+	Ex. Facebook, Instagram, Twitter, Linkedin...
+2. Communications internet applications
+	Ex. Email, Skype, Zoom, Whatsapp...
+3. Entertainment internet applications
+	Ex. Netflix, Hotstar, Youtube, Amazon prime video...
+4. Travel internet applications
+	Ex. Google trips, Google map, Trivago...
+
+
+
+
+What is protocol?
+- A network protocol is a group of rules accompanied by the network.
+- Network protocol will be formalized and plans composed of rules, protocols, and types that describe communication among a couple of devices over the network.
+- The protocol can be describe as an approach to rules that enable a couple of entities of a communication program to tranfer information through any type of variety of a physical medium.
+- The protocol identifies the rules, syntax, semantics, and synchronization of communication and feasible error managing methods. in this article, we will discuss the different types of networking protocols.
+
+
+
+
+Types of protocols:-
+protpcols:- It is group of rules for communication with data of with devices.
+1. HTTP :- Hyper text transfer protocol
+2. HTTPS:- Hyper text transfer protocol secure
+3. FTP:- File tranfer protocol- Use to tranfer files between two device
+4. Email protocol:- 1. POP3- Post office protocol
+		    	 	 2. STMP- Simple mail tranfer protocol
+5.TCP or UDP:- transmission control protocol or user datagram protocol
+
+
+
+
+
+What is application security?
+- Application security refers to security precautions used at the application level to prevent the theft or hijacking of data or code within the application.
+- It includes security concerns made during application development and desing, as well as methods and procedures for protecting application once they've been deployed.
+- All tasks that introduce a secure software development life cycle to development teams are included in application security shortly known as Appsec.
+- Its ultimate purpose is to improve security practices and, as a result, detect, repair, and ideally, avoid security flaws in application.
+- It covers the entire application life cycle, including requirements analysis, design, implementation, testing, and maintenance.
+
+Application Software
+- The most commom type of software, apllication software is a computer software package that performs a specific function for a user, or in some cases, fpr another application.
+- An application can be self-contained, or it can be a group of programs that run the application for the user.
+- Examples of modern application include officesuites, graphics software, databases and databese management programs, web browsers, word processors, software development tools, image editors and communication platforms.
+
+Example: Microsoft office, Paint, Powerpoint etc...
+
+
+
+
+System Software
+- These software programs are designed to run a computer's application programs and hardware.
+- System software coordinates the activities and functions of the hardware and software.
+- It controls the operations of the computer hardware and provides an environment or platform for all the other types of software to work in.
+- The OS is the best example of system software; it manages all the other computer programs.
+- Other examples of system software include the firmware, computer language translators and system utilities.
+
+Example:- Notepad, Calculator etc...
+
+
+
+
+Driver software
+- Also known as device drivers, this software is often considered a type of system software.
+- device drivers control the device and peripherals connected to a computer,
+enabling them to perform their specific tasks.
+- Every device that is connected to a computer needs at least one device driver to function.
+- Example include software that comes with any nonstandard hardware, including special game controllers, as well as the software that enables standard hardware, such as USB storage device, keyboards, headphones and printers.
+
+Example:-Audio driver, Video driver etc... 
+
+
+
+
+
+
+Middleware
+- The term middleware describe software that mediates between application and system software or between two different kinds of application software for example, middleware enables Microsoft windows to talk excel and word.
+- It is also  used to  send a remote work request from an application in a computer that has one kind of OS, to an application in a computer with a different OS. It also enables newer application to work  with legacy ones.
+
+Example:- Database middleware, Apllication server middleware
+
+
+
+
+
+
+Programming software
+- Computer programmers use programming software to write code. Programming software and programming tools enable developers to develop, write, test and debug other software programs.
+- Example of programming software include assemblers, compilers, debuggers and interpreters.
+
+Example:- Turbo-C, Eclipse, Sublirne etc...
+
+
+
+
+Application and Examples
+- Shopping mall Example
+	1. Accept Customer Details
+	2. Calculate the bill
+	3. Apply Discount Based on day of the week
+		(a) Monday low discount-10%
+		(b) Thursday High discount-50%
+
+
+
+
+
+SDLC Methodology
+SDLC:- software development life cycle
+
+ in detail, the SDLC methodology focuses on the following phases of software development:
+There are 6 phase of SDLC:-
+1. Requirement gathering- To gather the requirments
+2. Analysis- Analysis of requirments
+3. Designing- Frontfend:- HTML,CSS,JS...
+4. Coding- backend:- python, java, php...
+5. Testing- To test  the website or application 
+6. Maintainence- To maintain the application
+
+
+
+
+
+
+Software Architecture
+- Software architecture is the blueprint of building software. It shows the overall structure of the software, the collection of components in it, and how they interact with one another while hiding the implementation.
+- This helps the software development team to clearly communicate how the software is going to be built as per the requirements of customers.
+- There are various ways to organize the components in software architecture. And the different predefined organization of components in software architecture are known as software architecture patterns.
+- A lot of patterns ware tried and tested. Most of them have successfully solved various problems. In each pattens, the components are organized differently for solving a specific problem in software architectures.
+- Well, I hope you dont't want to bore yourself by reading the endless types of software architecture patterns.
+
+Layers in software architecture:-
+1. Presentation layer:-
+2. Application layer:-
+3. Business layer:-
+4. Persistence layer:- Data access layer
+5. Database layer:-
+
+
+1. Presentation layer:-
+- The presentation layer, also called the UI layer, handles the interaction that users have with the software. It's the most visible layer and defines the application's overall look and presentation to the end-users. This is the tier that's most accessible, which anyone can from their client device, like a desktop, leptop, mobile phone or tablet.
+
+2. Application layer:-
+- the application layer handles the main programs of the architecture. It includes the code definitions and most basic functions of the developed application. This is the layer that programmers spend most of their time in when working on the software you can use this layer to  implement specific coordination logic that doesn't align exactly with either the presentation or business layer.
+
+3. Business layer:-
+- The business layer, also called the domain layer, is where  the aaplication's business logic operates. business logic is a collection of rules that tell the system how to  run an application, based on the organization's guidelines. this layer essentially determines the behavior of the entire application. After  one action finishes, it test the application what to do next. 
+
+4. Persistence layer:-
+- The persistence layer, also called the data access layer, acts as a protective layer. It contains the code that's necessary to access the database layer. This layer also holds the set of codes that allow you to manipulate various aspects of the database, such as connection details and SQL statements.
+
+5. Database layer:-
+- The database layer is where the system stores all  the data. it's the lowest tier in the software architecture and houses not only data but indexs and tables as well. search, insert, update and delete operations occur here frequently. Application data can store in a file server or database server, revealing crucial data buk keeping data storage and retrieval procedures hidden.
+
+
+
+
+
+Environment  in industry
+1. Analysis and design environment
+2. The development environment
+3. The common build environment
+4. The testing environment
+5. The production environment
+
+1. Analysis and design environment
+- The analysis and design environment is aligned to the planning and analysis phases of the SDLC. In this environment, the main processes that take place include carrying out an in-depth examination of the current system and the proposed system. The system architecture is also defined and includes developing the design of the hardware, software, and network requirements for the system. within this environment, system and business analysts work closely with software engineers.
+
+2. The development environment
+- The development environment can also be a physical space where development takes place and where software engineers interact. another example of the development environment is the integrate development environment (IDE). The IDE provides a platform where tools and development processes are coordinated in order to provide software engineers a convenient way of accessing the resources thay require during the development process.
+
+3. The common build environment
+- The commom build environment is closely aligned to the development phase of the SDLC. In this environment, software engineers merge the work done in the development environment. within this environment, software engineers build systems. these are used to automate the process of software compilation.
+
+4. The testing environment
+- The environment is where testing teams evaluate the application/quality. program's This also allows computer programmers to find out and solve any defects that may interfere with the application's smooth operation or degrade the user experience.
+
+5. The production environment 
+- When the end-user a web/mobile application, the program is operating on a production server.It's been created in the production environment.
+
+
+
+
+Programming
+Programming:- It is a technique that how you get solve problems using computer
+There are countless definitions of  what computer programming is, but here is ours.
+"Programming is how you get computer to solve problems."
+There are two key phraseshere that are important:
+- You: without the programmer(you), the computer is useless. it does what you tell it to do.
+- Solve problems: computers are tools. They are complex tools, admittedly, but they are not mysterious or magical: they exist to make tasks easier.
+
+Computer programs make computer work:
+Computer programs ( or software) are what makes computer work. without software, modern computers are just complicated machines for turning electricity into heat. It's software on your computer that runs your operating system, browser, email, games, movie player- just about everything.
+
+Programing is creative:
+Programming is a creative task: there is no right or wrong way to solve a problem, in the same way, that there is no right or wrong way to paint a picture.
+
+There are choices to be made, and one way seem beter than another, but that doesn't mean the other is wrong! With the right skills and experience, a programmer can craft software to solve an unlimited number of problems-from telling you when your next train will arrive at playing your favourite music.
+
+The possibilities are constrained only by your imagination. that's why I love programming. Programming having a multiple programming languages.
+
+
+
+
+Types of programming:-
+1. Procedural Oriented Programming:- C language
+2. Functional Programming language:- Python
+3. Object-Oriented Programming language:- C++
+4. Scripting Programming language:- Javascript
+5. Logic programming language:- Prolog language
+
+
+
+
+
+Types of programming languages:-
+1. Low-level language:- MAchine language (0 and 1)- Binary language
+=> Machine language:;- 0 and 1
+=> Assembly language:- It understands both that is low level and high level
+
+2. High-level language:- Programming language:- Human understable form
+=> Procedural Oriented Programming language
+=> Object-Oriented Programming language
+=> Natural language
+
+3. Middle-level programming language
+
+1. Low-level programming language
+Low-level language is machine-dependent (0s and 1s) programming language. The processor runs low-level programs derectly without the need of a compiler or interpreter, so the programs written in low-level language can be run very fast.
+
+Low-level language is further divided into two parts-
+
+i. Machine language
+Machine language is a type of law-level programming language. It is also called as machine code or object code. Machine language is easier to read because it is normally displayed in binary or hexadecimal form (base 16) form. It does not require a translator to convert the programs because computers directly understand the machine langauge programs.
+
+The advantage of machine language is that it helps the programmer to execute the programs faster than the high-level programming langauage.
+
+ii. Assembly language
+Assembly language (ASM) is also a type of low-level programming language that is designed for specific processors. It represents the set of instruction in a symbolic and human-understandable form. It uses an assembler to convert the assembly langauge to machine langauge.
+
+The advantage of assembly langauge is that it requires less memory and less execution time to execute a program.
+
+2. High-level programming langauge
+High-level programming (HLL) is designed for developing user-friendly software programs and websites. This programming language requires a compiler or interpreter to translate the program into machine language (execute the program).
+
+The main advantage of a high-level language is that it is easy to read, write, and mainain.
+
+High-level programming language includes Python, Java, JavaScript, PHP, C#, C++, Objective C, Cocol, Perl, Pascal, LISP, FORTRAN, and Swift programming language.
+
+A high-level language is further divided into three parts-
+
+i. Procedural Oriented programming language
+Procedural Oriented programming (POP) language is derived from structured programming and based upon the procedure call concept. It divides a program into small procedures called routines or functions.
+
+Procedural Oriented programming language is used by a software programmer to create a program that can be accomplished by using a programming editor like IDE, Adobe Dreamweaver, or Microsoft Visual Studio.
+
+The advantage of POP language is that it helps programmers to easily track the program flow and code can be reused in different parts of the program.
+
+Example:- C, FORTRAN, Basic, Pascal, etc.
+
+ii. Object-Oriented programming language
+Object-Oriented programming (OOP) language is based upon the objects. In this programming language, programs are divided into small parts called objects. It is used to implement real-world entities like inheritance, polymorphism, abstraction, etc in the program to makes the program resusable, efficient, and easy-to-use.
+
+The main advantage of object-oriented programming is that OOP is faster and easier to execute, maintain, modify, as well as debug.
+
+Example:- C++, Java, Python, C#, etc.
+
+iii. Natural language
+Natural language is a part of human language such as English, Russian, German, and Japanese. It is used by machine to understand, manipulate, and interpret, human's language. It is used by developers to perform tasks such as translation, automatic summarization, Named Entity Recognition (NER), relationship extraction, and topic segmentation.
+
+The main advantage of natural language is that it helps users to ask questions in any subject and directly respond within seconds.
+
+3. Middle-level programming language
+Middle-level programming language lies between the low-level programming language and high-level programming language. It is also known as the intermediate programming language and pseudo-language.
+
+A middle-level programming language's advantage are that it supports the features of high-level programming, It is a user-friendly language, and closely related to machine language and human language.
+
+Example:- C,C++ language
+
+
+
+
+
+Important programming language
+- Development is mainly divided into two parts
+
+Frontend Development
+HTML
+CSS
+JAVASCRIPT
+REACT
+ANGULAR
+
+Backend Development
+In Backend you have a many language you can choose anyone language
+If you are Choosing web development platform then you have a mainly three language
+
+											PHP
+											JAVA
+											PYTHON
+											DOT NET
+
+
+HTML:-
+HTML=>"Hyper Text Markup Language"- is the language used to tell your web browser what each of a website is. So, your browser knows how to structure the web page you're looking at.
+
+CSS:-
+CSS makes the front-end of a website shine and it creates a great user experience. Without CSS, website would be less pleasing to the eye and likely much harder to navigate. In addition to layout and format, CSS is responsible for font color and more.
+
+JAVASCRIPT:-
+Javascript has evolved over the past 25 years to become a versatile and accessible programming language for working with web browsers. Developers use javascript to build complex interactive websites and browser games, and to connect server to websites and web application.
+
+
+Programming language in backend:
+The backend (or "server-side") is the portion of the website you don't see. It's responsible for storing and organizinf data, and ensuring everything on the client-side actually works. The backend communicates with the frontend, sending and receiving information to be displayed as a web page.
+
+
+
+
+
+Writing source code
+What is source code?
+Source code is the source of a computer program. It contains declarations, instructions, functions, loops ans other statements, which act as instructions for the program on how to function. programs may contain one or more source code text files, which can be stored on a computer's hard disk, in a database, or be printed in books of code snippets.
+
+
+
+
+
+Running code
+When you will run your code two things are Most important
+1. Compiler
+2. Interpreter
+
+
+1. Compiler:- complier is a machine which converts your code from high level language to low level language
+It works as a translator
+compiler reads whole code and then give o/p or error
+EX. C,C++
+
+It is a translator which takes i/p i.e., High-level language, and produces an o/p of low-level language i.e. machine or assembly language.
+- A compiler is more intelligent than an assembler it checks all kinds of limits, ranges, errors, etc.
+- But its program run time is more and occupies a larger part of memory. It has a slow speed because a compiler goes through the entire program and then translate the entire program into machine codes.
+
+
+Source program --------> Compiler --------> Object program
+
+
+
+
+2. Interpreter:- It reads your code line by line then gives error
+EX. Python
+
+An interpreter is a program that translates a programming language into a comprehensible language.-
+- It translate only one statement of the program at a time.
+- Interpreters, more often than one are smaller than compilers,
+
+
+			  Preprocessing
+Source program ----------------> Intermediate Code --------------> Interpreter
+											Processing
+
+
+
+
+
+Github:- Github is server
+
+DFD:- Data flow diagram
+=> Data flow diagram is a process to representing a data in a proper flow
+0- level DFD
+1- level DFD
+2- level DFD
+
+Flowchart is a process of representing the program in a sequential manner.
+
+Module 3:- C programming
+
+C language
+
+C is a high level programming language
+language:- A way of communication
+
+History of C language:-
+C was created by Denis m ritchie in 1972 in bell laboratories, california
+
+=> C was standarise by ANSI (American national standard institute)
+
+Syntax:-
+
+#- predefined
+
+include- To add something
+
+Stdio.h- Standard i/p o/p header file
+
+conio.h- console i/p o/p header file (turbo c)
+
+main()
+
+{ 
+code...
+}
+
+printf()-- print the text in console screen
+
+Escape Sequence:-
+
+1. \n- new line
+-
+2. \t- tab (4 spaces)
+
+
+
+
+
+Variables and datatypes:-
+
+Datatypes:-
+
+Without point- integer (int)- 89, 65,23,-90
+With point-float (float)- 45.34, 78.67-- store upto six digit- 78.123456
+Double
+character- (char)- a-z,A-Z, 'A', 'd'
+
+Variable:- To store a value
+a=34
+manav=67
+
+
+
+Rules of variable:-
+1. Variables should not contain keywords:-
+	int=67 x
+
+2. Variables should not start with numbers:-
+	4num x
+
+3.  Variables should not contain white spaces:-
+	no of books x
+
+4. Variables should start with a-z, A-Z and _ character
+a=67.89
+manav='m'
+
+Access specifiers-
+ int- %d or %i
+float- %f
+double- %lf
+char- %c
+
+
+
+
+
+oprators:- To perform operations between two operands
+a + b
+a,b => operands
++ => operator
+
+
+Types of operators:-
+
+1. Arithmetic Operators:-
++, -, *, /, % - modulo- reminder
+++ => increment operator // It increases value by 1
+-- => decrement operator // It decreases value by 1
+
+
+
+
+
+2. Assignment operators:-
+=
++=
+-=
+*=
+/=
+%=
+
+
+
+
+
+3. Relational operators:-
+==
+>
+<
+>=
+<=
+!=
+
+Boolean value:- True or false 
+False- 0
+True- 1
+
+
+
+
+
+4. Logical operators:-
+
+Logical AND- It returns true if both the statements are true
+&&
+
+Logical OR:- It returns true if one of the statement are true
+||
+
+Logical NOT:- It reverse the result, it returns true if both the statements are false
+!
+
+
+
+
+
+5. Bitwise operators:- C++
+
+
+6. Sizeof() operators:- To find the size of datatypes like int, float, double, char, string
+
+
+
+
+
+
+
+
+Conditional Statements:-
+
+1. If condition:-
+Syntax:-
+
+
+ 		if(condition)
+		{
+			true statement;
+		}
+
+
+
+
+
+2. if else
+Syntax:-
+
+		if(condition)
+		{
+			true statement;
+		}
+		else
+		{
+			statement;
+		}
+
+
+
+
+
+3. if else if else ladder:-
+Syntax:-
+ 
+
+	if(condition)
+	{
+		true statement;
+	}
+	if else(condition)
+	{
+		statement;
+	}
+	else
+	{
+		statement;
+	}
+
+
+
+
+
+4. Nested if statements:-
+syntax:-
+
+			if(condition)
+			{
+				if(condition)
+				{
+					statement;
+				}
+			   statement;
+			}
+
+
+
+
+
+5. Switch case or Switch statement
+syntax:-
+
+			switch(variable)
+			{
+				case 1:
+				  statement;
+				  break;
+				case 2:
+				  statement;
+				  break;
+				default:
+				  statement;
+			}
+
+
+
+
+
+
+
+
+Loops in C language:-
+
+Loops:- Loops is used to execute a statement repeatedly
+Types of Loops:-
+1. For Loop:-
+Syntax:-
+
+			for(initialization; condition; updation)
+			{
+				statement;
+			}
+
+
+
+
+
+2. Nested for loop:-
+Syntax:-
+
+			for(initialization; condition; updation)
+			{
+				 for(initialization;condition;updation)
+				{
+					statement;
+				}
+				statement;
+			}
+
+
+
+
+
+
+
+
+While Loop:- Entry controlled loop
+Syntax:-
+
+			initialization;
+			while(condition)
+			{
+				statement;
+				updation;
+			}
+
+
+
+
+
+
+
+
+Do While Loop:- Exit controlled loop
+Syntax:-
+			initialization;
+			do
+			{
+				statement;
+				updation;
+			} while(condition);
+
+
+
+
+
+
+
+
+Arrays:- Arrays is a derived data type which is used to store similar data elements in a single location
+Syntax:-
+			var[size]= values
+			n[5]= {1,2,3,4,5}
+
+Arrays is used for data elements arrangements
+Arrays index always starts from 0.
+
+
+
+
+
+Types of arrays:-
+There are two types of arrays:-
+
+1. single dimensional arrays (1-D)
+int arrname[size]
+
+2. Multi-dimensional arrays (2-D)
+int arrname[row][col]
+
+
+
+
+
+
+
+
+Strings:- A series of characters
+
+manav,tops,laptop:- strings
+=> it is used to string text and characters
+
+string- %s
+datatype- char
+gets(vername)
+
+
+palindrome- madam
+
+
+
+
+
+Functions:- Fuction is a block of code that we can use again and again by using function we can reuse our code. So, it provides us reusability 
+
+
+Syntax:-
+
+	datatype function name()
+	{
+			block of code...
+	}
+
+	main()
+	{
+			function calling();
+	}
+
+
+
+
+
+
+Function Declaration:- To declare the Function
+Function calling:- TO call the function
+void:- null
+
+Types of function:-
+1. library function:- printf(),scanf(), strcat()
+2. User defined functions:- It is defined by users
+greet(), sum(),- usr defined functions
+
+
+
+
+
+Function Categories:- 
+1. function without parameters and without return value:- login()
+2. function without parameters and with return value:- click on mobile button and it will return the mobile page
+3. function with parameters and without return value:- login(email,mobile) here email and mobile are parameters
+4. function with parameters and with return value:- login(email,mobile)
+
+email:- manav@gmail.com
+mobile:- 9429369656
+
+check if correct then it will return login page or if  incorrect it will return email or password
+
+
+
+
+
+Interview question:-
+Difference between parameters and arguments:-
+when value are written in function declaration is called ,parameters and the values written in function calling is called arguments.
+
+
+
+
+
+Inbuilt or library functions:-
+math- To perform mathmatical operations
+
+
+
+Recursive function or recursion:-
+When function calls it self is known as recursive function and its method is known as recursion
+
+Not:-
+1. It will call itself based on given condition
+2. Works only for function with parameter
+
+Syntax:-
+
+		datatype functionName()
+		{
+			code...
+			functionName();
+		}
+		main()
+		{
+			functionName();
+		}
+
+
+
+
+
+
+
+Pointers:- The pointers is a variable which stores the address of another variable
+
+a=78
+
+It is help to find the memory address
+&
+pointer:- %p
+
+address will be in the hexadecimal form
+pointer= *p,*q
+
+
+
+
+
+
+
+Structure:-
+
+Structure is a user defined data type that is used to multiple types of values in a single unit
+=> We can store multiple data types in a single unit by using structure
+
+Syntax:-
+
+		struct structure-name
+		{
+			datatype1 var1,v2,v3;
+			datatype2 var4,v5;
+		}
+		main()
+		{
+			structure-name varName;
+			varName.var1;
+		}
+
+Total size of structure is 28 bytes.
+
+
+
+
+Union:-
+
+
+Interview Question:-
+Difference between Structure and union:-
+Size of structure= total size of datatype declared= 28 bytes
+Size of union= largest datatype size= 20 bytes
+
+
+
+
+
+
+
+
+C revision:-
+printf
+scanf
+string
+if else
+switch
+pointer
+loops
+structure
+function
+patterns
+
+
+for(initialization;condition;updation)
+			{
+				statement;
+			}
+
+
+do while:-
+syntax:-
+			initialization;
+			do
+			{
+				statement;
+				updation;
+			} while(condition);
+
+while:-
+Syntax:-
+			initialization;
+			while(condition)
+			{
+				statement;
+				updation;
+			}

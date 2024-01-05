@@ -1,0 +1,2466 @@
+Task:- print your name, address, age and city
+code:-
+
+#include<stdio.h>
+main()
+{
+	printf("Your name=> Kunal Ghanchi\nAddress=> 02-Arihant nagar society, IOC Road-Chandkheda\nAge=> 17\nCity=> Ahmedabad");
+}
+
+
+
+
+
+
+
+
+Task:- Write a C program to make calculator (addition, subtraction, multiplication, division, modulo)- Dynamic value (user i/p)
+code:-
+
+#include<stdio.h>
+main()
+{
+	int a,b;
+	printf("Enter a two numbers\n");
+	scanf("%d %d",&a,&b);
+	printf("%d + %d = %d\n",a,b, a+b);
+	printf("%d - %d = %d\n",a,b, a-b);
+	printf("%d * %d = %d\n",a,b, a*b);
+	printf("%d / %d = %d\n",a,b, a/b);
+	printf("%d % %d = %d\n",a,b, a%b);	
+}
+
+
+
+
+
+
+
+
+Task:- Write a C program 
+to find the area of circle, triangle, rectangle and square- Dynamic value (user i/p)
+code:-
+
+// Area of cicle
+#include <stdio.h>
+main()
+{
+	int r, area;
+	printf("Enter a integer number\n");
+	scanf("%d", &r);
+	area = 3.14*r*r;
+	printf("area of circle = %d", area);
+}
+
+
+
+
+// Area of triangle
+#include<stdio.h>
+main()
+{
+	float b, h, area;
+	printf("Enter a two numbers\n");
+	scanf("%f %f", &b, &h);
+	area = b*h/2;
+	printf("area of triangle %f", area);
+}
+
+
+
+
+// Area of rectangle
+#include<stdio.h>
+main()
+{
+	int w,l, area;
+	printf("Enter a two integer numbers\n");
+	scanf("%d %d", &w,&l);
+	area = w*l;
+	printf("area of rectangle = %d", area);
+}
+
+
+
+
+// Area of square
+#include<stdio.h>
+main()
+{
+	int a, area;
+	printf("Enter a integer number\n");
+	scanf("%d", &a);
+	area = a*a;
+	printf("area of square = %d", area);
+}
+
+
+
+
+
+
+
+
+1. Arithmetic Operators:-
+
+code:-
+
+// ++ => increment operator // It increases value by 1
+// -- => decrement operator // It decreases value by 1
+
+#include<stdio.h>
+main()
+{
+	int a,b;
+	printf("Enter the two value:-");
+	scanf("%d %d", &a,&b);
+	printf("value of a=> %d\n",++a);
+	printf("value of b=> %d",--b);
+}
+
+
+
+
+
+2. Assignment operators:-
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int a,b;
+	printf("Enter the value of a:-\n");
+	scanf("%d",&a);
+	printf("the value of b using = %d\n",b, b=a);
+	printf("Enter the value of a and b:-\n");
+	scanf("%d %d",&a,&b);
+	printf("the value of a using += %d\n",a, a+=b);
+	printf("the value of a using -= %d\n",a, a-=b);
+	printf("the value of a using *= %d\n",a, a*=b);
+	printf("the value of a using /= %d\n",a, a/=b);
+	printf("the value of a using %%= %d\n",a, a%=b);
+}
+
+
+
+
+
+3. Relational operators:-
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int a,b;
+	printf("Enter the value of a and b:-\n");
+	scanf("%d %d",&a,&b);
+	printf("%d == %d =%d\n",a,b, a==b);
+	printf("%d > %d = %d\n",a,b, a>b);
+	printf("%d < %d = %d\n",a,b, a<b);
+	printf("%d >= %d = %d\n",a,b, a>=b);
+	printf("%d <= %d = %d\n",a,b, a<=b);
+	printf("%d != %d = %d\n",a,b, a!=b);		
+}
+
+
+
+
+
+4. Logical operators:-
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int x,y;
+	printf("Enter the value of x :-");
+	scanf("%d",&x);
+	printf("Enter the value of y :-");
+	scanf("%d",&y);
+	printf("The value of logical AND => %d\n",x>y && x<y);
+	printf("The value of logical OR => %d\n",x>y || x<y);
+	printf("The value of logical NOT => %d\n", !(x>y && x<y));
+}
+
+
+
+
+
+5. Sizeof() operators:- To find the size of datatypes like int, float, double, char, string
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int a;
+	float b;
+	char c;
+	char d[5];
+	double e;
+	printf("integer=> %d bytes\n", sizeof(a));
+	printf("float=> %d bytes\n", sizeof(b));
+	printf("char=> %d bytes\n", sizeof(c));
+	printf("string=> %d bytes\n", sizeof(d));
+	printf("double=> %d bytes\n", sizeof(e));
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to swap two numbers without using third variable -user input
+
+Ex:-
+a= 23
+b= 56
+a= 56
+b= 23
+
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int x, y;
+	printf("Input value for x & y: \n");
+	scanf("%d %d",&x,&y);
+	printf("Before swapping the value of x & y: %d %d",x,y);
+		x=x+y;
+		y=x-y;
+		x=x-y;	
+	printf("\nAfter swapping the value of x & y: %d %d",x,y);
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to check the number is even or odd
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int a;
+	printf("Enter the value of a\n");
+	scanf("%d",&a);
+	if(a%2==0)
+	{
+		printf("number is even");
+	}
+	{
+		printf("number is odd");
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to enter marks and declare the result pass or fail ( only use if else condition)
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int marks;
+	printf("Enter your marks\n");
+    scanf("%d",&marks);
+    if(marks>=33)
+    {
+    	printf("pass");
+	}
+	else
+	{
+		printf("fail");
+	}
+    
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to check a number is positive, negative, or zero. (using if-else)
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int a;
+	printf("Enter the value of a:-\n");
+	scanf("%d",&a);
+	if(a>0)
+	{
+		printf("number is positive");
+	}
+	else if(a==0)
+	{
+		printf("number is zero");
+	}
+	else
+	{
+		printf("number is negative");
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to enter the age and check if he can get licence or not
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int age;
+	printf("Enter your age:-\n");
+	scanf("%d",&age);
+	if(age>=18)
+	{
+		printf("You can gat licence");
+	}
+	else
+	{
+	    printf("you cannot get licence");
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to find the maximum between two numbers- (user input)
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int a,b;
+	printf("enter the value of a and b\n");
+	scanf("%d %d",&a,&b);
+	if(a>b)
+	{
+		printf("a is maximum",a);
+	}
+	else
+	{
+		printf("b is maximum",b);
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Take a age of two persons and find who is bigger?
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int age1,age2;
+	printf("Enter the value of age1 and age2\n");
+	scanf("%d %d",&age1,&age2);
+	if(age1>age2)
+	{
+		printf("age1 is bigger",age1);
+	}
+	else
+	{
+		printf("age2 is bigger",age2);
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to check the number is divisble by 5 and 11 or not
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int a;
+	printf("enter the value of a:-\n");
+	scanf("%d",&a);
+    if(a%5==0 && a%11==0)
+    {
+    	printf("the number is divisble by 5 and 11");
+	}
+	else
+	{
+		printf("it is not divisible");
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to check if the given year is leap year or not
+
+code:-
+
+#include<stdio.h>
+main() 
+{
+   int year;
+   printf("Enter a year:-\n");
+   scanf("%d", &year);
+   if (year % 4 == 0) 
+   {
+      printf("it is leap year", year);
+   }
+   else 
+   {
+      printf("it is not a leap year", year);
+   }
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to convert days into years and years into days
+
+code:-
+
+// days into years
+#include<stdio.h>
+main()
+{
+	int years,days;
+	printf("Enter days:-\n");
+	scanf("%d",&years);
+	days=years/365;
+	printf("The number of years is %d",days);
+}
+
+
+
+
+
+// years into days
+#include<stdio.h>
+main()
+{
+	int years,days;
+	printf("Enter years:-\n");
+	scanf("%d",&days);
+	years=days*365;
+	printf("The number of days is %d",years);
+}
+
+
+
+
+
+
+
+
+=> Nested if statements:-
+
+Ex:- 
+code:-
+
+#include<stdio.h>
+main()
+{
+	int x=100, y=200;
+	if(x==100)
+	{
+		if(y==200)
+		{
+			printf("The value of x is 100 and y is 200");
+		}
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to input week number and print week day. (using switch case)
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int day;
+	printf("Enter a number\n");
+	scanf("%d", &day);
+	switch(day)
+	{
+		case 1:
+			printf("Monday");
+			break;
+		case 2:
+			printf("Tuesday");
+			break;
+		case 3:
+			printf("Wednesday");
+			break;
+		case 4:
+			printf("Thursday");
+			break;
+		case 5:
+			printf("Friday");
+			break;
+		case 6:
+			printf("Saturday");
+			break;
+		case 7:
+			printf("Sunday");
+			break;
+		default:
+			printf("Invelid input! Please enter week number between 1-7.");
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to print number of days in month using switch case
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int month;
+	printf("Enter a number\n");
+	scanf("%d", &month);
+	switch(month)
+	{
+		case 1:
+			printf("31 days in that month");
+			break;
+		case 2:
+			printf("28/29 days in that month");
+			break;
+		case 3:
+			printf("31 days in that month");
+			break;
+		case 4:
+			printf("30 days in that month");
+			break;
+		case 5:
+			printf("31 days in that month");
+			break;
+		case 6:
+			printf("30 days in that month");
+			break;
+		case 7:
+			printf("31 days in that month");
+			break;
+		case 8:
+			printf("30 days in that month");
+			break;
+		case 9:
+			printf("31 days in that month");
+			break;
+		case 10:
+			printf("30 days in that month");
+			break;
+		case 11:
+			printf("31 days in that month");
+			break;
+		case 12:
+			printf("30 days in that month");
+			break;
+		default:
+			printf("Invelid input! Please enter month number between 1-12.");
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to print the character is vowel or consonant using switch case
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	char ch;
+	printf("Enter a character\n");
+	scanf("%c", &ch);
+	switch(ch)
+	{
+		case 'a':
+			printf("It is vowel");
+			break;
+		case 'e':
+			printf("It is vowel");
+			break;
+		case 'i':
+			printf("It is vowel");
+			break;
+		case 'o':
+			printf("It is vowel");
+			break;
+		case 'u':
+			printf("It is vowel");
+			break;
+		default:
+			printf("It is consonant");
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to find the maximum between two numbers using switch case
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int a,b;
+	printf("Enter two numbers\n");
+	scanf("%d %d", &a, &b);
+	switch(a>b)
+	{
+		case 0:
+			printf("The maximum is %d",b);
+			break;
+		case 1:
+			printf("The maximum is %d",a);
+			break;
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to check whether a character is alphabet or not.
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	char k;
+	printf("Enter a character:-\n");
+	scanf("%c", &k);
+	if((k>='a' && k<='z') || (k>='A' && k<='Z'))
+	{
+		printf("%c is an alphabet.", k);
+	}
+	else
+	{
+		printf("%c is not an alphabet.", k);
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to input any alphabet and check whether it is vowel or consonant. (using if else)
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	char h;
+	printf("Enter a character:-\n");
+	scanf("%c", &h);
+	if(h=='i' || h=='I')
+	{
+		printf("It is vowel.");
+	}
+	else if(h=='o' || h=='O')
+	{
+		printf("It is vowel.");
+	}
+	else if(h=='u' || h=='U')
+	{
+		printf("It is vowel.");
+	}
+	else if(h=='a' || h=='A')
+	{
+		printf("It is vowel.");
+	}
+	else if(h=='e' || h=='E')
+	{
+		printf("It is vowel.");
+	}
+	else if(h>='a' && h<='z' || h>='A' && h<='Z')
+	{
+		printf("It is consonant");
+	}
+	else{
+		printf("This is not a alphabet");
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to input any  character and chexk whether it is alphabet, digit or special character.
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	char k;
+	printf("Enter a character:-\n");
+	scanf("%c", &k);
+	if((k>= 'a' && k<='z') || (k>= 'A' && k<= 'Z'))
+	{
+		printf("This is an alphabet.");
+	}
+	else if(k>='0' && k<= '9')
+	{
+		printf("This is an digit.");
+	}
+	else{
+		printf("This is a special character.");
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to check whether a character is uppercase or lowercase alphabet.
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	char g;
+	printf("Enter a character:-\n");
+	scanf("%c", &g);
+	if(g>='a' && g<='z')
+	{
+		printf("This is lowercase.");
+	}
+	else if(g>='A' && g<='Z')
+	{
+		printf("This is uppercase.");
+	}
+	else{
+		printf("This is not a alphabet.");
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to input week number and print week day. (using if else)
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int a;
+	printf("Enter a number:-\n");
+	scanf("%d", &a);
+	if(a==1)
+	{
+		printf("Sunday");
+	}
+	else if(a==2)
+	{
+		printf("Monday");
+	}
+	else if(a==3)
+	{
+		printf("Tuesday");
+	}
+	else if(a==4)
+	{
+		printf("Wednesday");
+	}
+	else if(a==5)
+	{
+		printf("Thursday");
+	}
+	else if(a==6)
+	{
+		printf("Friday");
+	}
+	else if(a==7)
+	{
+		printf("Saturday");
+	}
+	else
+	{
+		printf("Invelid input! Please enter week number between 1-7.");
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to input month number and print number of days in that month. (using if else)
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int m;
+	printf("Enter a number:-\n");
+	scanf("%d", &m);
+	if(m==1)
+	{
+		printf("31 days in that month.");
+	}
+	else if(m==2)
+	{
+		printf("28/29 days in that month.");
+	}
+	else if(m==3)
+	{
+		printf("31 days in that month.");
+	}
+	else if(m==4)
+	{
+		printf("30 days in that month.");
+	}
+	else if(m==5)
+	{
+		printf("31 days in that month.");
+	}
+	else if(m==6)
+	{
+		printf("30 days in that month.");
+	}
+	else if(m==7)
+	{
+		printf("31 days in that month.");
+	}
+	else if(m==8)
+	{
+		printf("30 days in that month.");
+	}
+	else if(m==9)
+	{
+		printf("31 days in that month.");
+	}
+	else if(m==10)
+	{
+		printf("30 days in that month.");
+	}
+	else if(m==11)
+	{
+		printf("31 days in that month.");
+	}
+	else if(m==12)
+	{
+		printf("30 days in that month.");
+	}
+	else
+	{
+		printf("Invelid input! Please enter month number between 1-12.");
+	}
+	
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to calculate profit or loss. (using if else)
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int a,m,g,h;
+	printf("Enter cost price:- ");
+	scanf("%d", &a);
+	printf("Enter selling price:- ");
+	scanf("%d", &m);
+	if(a<m)
+	{
+		g= m-a;
+		printf("Profit= %d",g);
+	}
+	else if(a>m)
+	{
+		h= a-m;
+		printf("Loss= %d", h);
+	}
+	else
+	{
+		printf("No profit and loss");
+	}
+}
+
+
+
+
+
+
+
+
+Taask:- Write a program to input marks of five subjects physics, chemistry, biology, mathmatics and computer. calculate percentage and grade according to following:-
+
+percentage >= 90%: Grade A
+percentage >= 80%: Grade B
+percentage >= 70%: Grade C
+percentage >= 60%: Grade D
+percentage >= 40%: Grade E
+percentage < 40%: Grade F
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int a,b,c,d,e,sum,total=500;
+	float p;
+	printf("Enter your physics subject marks:- ");
+	scanf("%d", &a);
+	printf("Enter your chemistry subject marks:- ");
+	scanf("%d", &b);
+	printf("Enter your biology subject marks:- ");
+	scanf("%d", &c);
+	printf("Enter your mathmatics subject marks:- ");
+	scanf("%d", &d);
+	printf("Enter your computer subject marks:- ");
+	scanf("%d", &e);
+	sum= a+b+c+d+e;
+	printf("Total Marks= %d\n",sum);
+	p= sum*100/total;
+	printf("Percentage is:- %f\n",p);
+	if(p>=90)
+	{
+		printf("Grade A");	
+	}
+	else if(p>=80)
+	{
+		printf("Grade B");
+	}
+	else if(p>=70)
+	{
+		printf("Grade C");
+	}
+	else if(p>=60)
+	{
+		printf("Grade D");
+	}
+	else if(p>=40)
+	{
+		printf("Grade E");
+	}
+	else
+	{
+		printf("Grade F");
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to check whether a number is positive, negative or zero using switch-case.
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int m;
+	printf("Enter a number:- ");
+	scanf("%d", &m);
+	switch(m==0)
+	{
+		case 1:
+			printf("The value is zero.");
+			break;
+	}
+	switch(m>0)
+	{
+		case 1:
+			printf("The value is positive.");
+			break;
+	}
+	switch(m<0)
+	{
+		case 1:
+			printf("The value is negative.");
+			break;
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to check whether a number is even or odd using switch-case.
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int m;
+	printf("Enter a number:- ");
+	scanf("%d", &m);
+	switch(m%2==0)
+	{
+		case 1:
+			printf("The value is even.");
+			break;
+		default:
+			printf("The value is odd.");
+	}
+}
+
+
+
+
+
+
+
+
+Task:- Write a program to create simple calculator using switch case.
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	char o;
+	int m,n;
+	printf("Enter a operator between (+,-,*,/,%%):- ");
+	scanf("%c", &o);
+	printf("Enter two numbers:- ");
+	scanf("%d %d", &m, &n);
+	switch(o)
+	{
+		case '+':
+			printf("%d + %d = %d", m,n,m+n);
+			break;
+		case '-':
+			printf("%d - %d = %d", m,n,m-n);
+			break;
+		case '*':
+			printf("%d * %d = %d", m,n,m*n);
+			break;
+		case '/':
+			printf("%d / %d = %d", m,n,m/n);
+			break;
+		case '%':
+			printf("%d %% %d = %d", m,n,m%n);
+			break;
+		default:
+			{
+				printf("Error! Enter a operator between (+,-,*,/,%%)");
+			}
+	}
+}
+
+
+
+
+
+
+
+
+
+Task:- Write a C program to check whether the triangle is equilateral, isosceles or scalene triangle.
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int side1,side2,side3;
+	printf("Enter side 1 and side 2 and side 3:-");
+	scanf("%d %d %d",&side1, &side2, &side3);
+	
+	if(side1==side2 && side2==side3)
+	{
+		printf("Equilateral Triangle");	
+	}
+	else if(side1==side2 || side2==side3 || side1==side3)
+	{
+		printf("Scelene triangle");
+	}
+	else
+	{
+		printf("Isosceles triangle");
+	}
+}
+
+
+
+
+
+
+
+
+Loops in C language:-
+
+1. For Loop:-
+
+Ex:-
+code:-
+
+#include<stdio.h>
+main()
+{
+	int i;
+	for (i = 1; i<=10; i++)
+	{
+		printf("%d\n", i);
+	}
+}
+
+
+
+
+
+
+
+
+print even number using for loop
+code:-
+
+#include<stdio.h>
+main()
+{
+	int i;
+	for (i = 2; i<=10; i=i+2)
+	{
+		printf("%d\n", i);
+	}
+}
+
+
+
+
+
+
+
+
+print odd number using for loop
+code:-
+
+#include<stdio.h>
+main()
+{
+	int i;
+	for (i = 1; i<=10; i=i+2)
+	{
+		printf("%d\n", i);
+	}
+}
+
+
+
+
+
+
+
+
+Write a program to print table using for loop (user print)
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int num,i;
+	printf("Enter a number:-");
+	scanf("%d", &num);
+	for (i =1;i<=10;i++)
+	{
+		printf("%d * %d = %d\n",num,i,num*i);
+	}
+}
+
+
+
+
+
+
+
+
+2. Nested for loop:-
+
+patterns in C language
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int row,col;
+	for(col=1;row<=5;row++)
+	{
+		for(col=1;col<=5;col++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+}
+
+
+
+
+
+
+
+
+Triangle patterns in C language
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int row,col;
+	for(col=1;row<=5;row++)
+	{
+		for(col=1;col<=row;col++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+}
+
+
+
+
+
+
+
+
+number patterns in C language
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int row,col;
+	for(col=1;row<=5;row++)
+	{
+		for(col=1;col<=row;col++)
+		{
+			printf("%d",col);
+		}
+		printf("\n");
+	}
+}
+
+
+
+
+
+
+
+
+Factorial:-
+5!= 5*4*3*2*1= 120
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int m,f=1,k;
+	printf("enter a number:- ");
+	scanf("%d", &k);
+	for(m=1;m<=k;m++)
+	{
+		f=f*m;
+	}
+	printf("factorial of %d is:- %d", k,f);
+}
+
+
+
+
+
+
+
+
+3. While Loop:- Entry controlled loop
+
+1 to 10 using while loop
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int i=1;
+	while(i<=10)
+	{
+		printf("%d\n",i);
+		i++;
+	}
+}
+
+
+
+
+
+
+
+
+print even number using while loop
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int i=2;
+	while(i<=10)
+	{
+		printf("%d\n",i);
+		i=i+2;
+	}
+}
+
+
+
+
+
+
+
+
+print odd number using while loop
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int i=1;
+	while(i<=10)
+	{
+		printf("%d\n",i);
+		i=i+2;
+	}
+}
+
+
+
+
+
+
+
+
+4. Do While Loop:- Exit controlled loop
+
+1 to 10 using do while loop
+
+code:- 
+
+#include<stdio.h>
+main()
+{
+	int i=1;
+	do
+	{
+		printf("%d\n", i);
+		i++;
+	}
+	while(i<=10);
+}
+
+
+
+
+
+
+
+
+print even number using do while loop
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int i=2;
+	do
+	{
+		printf("%d\n", i);
+		i=i+2;
+	}
+	while(i<=10);
+}
+
+
+
+
+
+
+
+
+print odd number using do while loop
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int i=1;
+	do
+	{
+		printf("%d\n", i);
+		i=i+2;
+	}
+	while(i<=10);
+}
+
+
+
+
+
+
+
+
+Looping practice questuons:-
+
+1. Write a program to print all natural numbers from 1 to n (for loop)
+
+code:- 
+
+#include<stdio.h>
+main()
+{
+	int i,m;
+	printf("enter a number\n");
+	scanf("%d",&m);
+	for(i=1;i<=m;i++)
+	{
+		printf("%d\n",i);
+	}
+}
+
+
+
+
+
+
+
+
+2. Write a program to print alphabets from a to z
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	char i;
+	for(i='a';i<='z';i++)
+	{
+		printf("%c ",i);
+	}
+}
+
+
+
+
+
+
+
+
+3. Write a program to find the sum of natural numbers from 1 to n.
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int i,m,n;
+	printf("enter a number\n");
+	scanf("%d",&m);
+	for(i=1;i<=m;i++)
+	{
+		n=n+i;
+	}
+	printf("The sum is %d", n);
+}
+
+
+
+
+
+
+
+
+4. Write a program to find the sum of even numbers from 1 to n.
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int i,m,n;
+	printf("enter a number\n");
+	scanf("%d",&m);
+	for(i=2;i<=m;i=i+2)
+	{
+		n=n+i;
+	}
+	printf("The sum is %d", n);
+}
+
+
+
+
+
+
+
+
+=> Arrays
+
+Ex:-
+code:-
+
+#include<stdio.h>
+main()
+{
+	int n[5]={2,4,5,6,7};
+	printf("%d",n[2]);
+}
+
+
+
+
+
+
+
+
+Ex:-
+code:-
+
+#include<stdio.h>
+main()
+{
+	int n[5]={2,4,5,6,7};
+	int i;
+	for(i=0;i<5;i++)
+	{
+		printf("\n%d",n[i]);
+	}
+}
+
+
+
+
+
+
+
+
+sum of arrays
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int n[5]={23,56,89,12,54};
+	int i,sum=0;
+	for(i=0;i<5;i++)
+	{
+		printf("\n%d",n[i]);
+		sum+=n[i];
+	}
+	printf("\nsum= %d",sum);
+}
+
+
+
+
+
+
+
+
+user print arrays
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int marks[5];
+	int i;
+	for(i=0;i<5;i++)
+	{
+		printf("Enter the marks %d:- ",i+1);
+		scanf("%d", &marks[i]);
+	}
+	for(i=0;i<5;i++)
+	{
+		printf("%d\n",marks[i]);
+	}
+}
+
+
+
+
+
+
+
+
+Write a C program to print all negative elements in an array.
+code:-
+
+#include<stdio.h>
+main()
+{
+	int num, m[200];
+	int i;
+	printf("Enter range of elements:- ");
+	scanf("%d",&num);
+	for(i=0;i<num;i++)
+	{
+		printf("Enter the m %d:- ",i+1);
+		scanf("%d", &m[i]);
+	}
+	for(i=0;i<num;i++)
+	{
+		if(m[i]<0)
+		{
+		printf("%d\n",m[i]);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+size of elements:-
+code:-
+
+#include<stdio.h>
+main()
+{
+	int num, m[200];
+	int i;
+	printf("Enter range of elements:- ");
+	scanf("%d",&num);
+	for(i=0;i<num;i++)
+	{
+		printf("Enter the m %d:- ",i+1);
+		scanf("%d", &m[i]);
+	}
+	for(i=0;i<num;i++)
+	{
+		printf("%d\n",m[i]);
+	}
+}
+
+
+
+
+
+
+
+
+sum of arrays user print
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int marks[5];
+	int i,sum=0;
+	for(i=0;i<5;i++)
+	{
+		printf("Enter the marks %d:- ",i+1);
+		scanf("%d", &marks[i]);
+			
+	}
+	for(i=0;i<5;i++)
+	{
+		printf("%d\n",marks[i]);
+		sum+=marks[i];	
+	}
+	printf("%d\n",sum);
+	
+}
+
+
+
+
+
+
+
+
+=> Multi-dimensional arrays
+
+Ex:-
+code:-
+
+#include<stdio.h>
+main()
+{
+	int a[2][3]={1,2,3,7,8,5};
+	int b[2][3]={1,1,4,6,2,9};
+	int c[2][3];
+	int row,col,sum;
+	printf("\nFirst Matrix\n");
+	for(row=0;row<2;row++)
+	{
+		for(col=0;col<3;col++)
+		{
+			printf("%d ",a[row][col]);
+		}
+		printf("\n");
+	}
+	printf("\nSecond Matrix\n");
+	for(row=0;row<2;row++)
+	{
+		for(col=0;col<3;col++)
+		{
+			printf("%d ",b[row][col]);
+		}
+		printf("\n");
+	}
+	printf("\nAddition Matrix\n");
+	for(row=0;row<2;row++)
+	{
+		for(col=0;col<3;col++)
+		{
+		c[row][col] = a[row][col] + b[row][col];
+		printf("%d ", c[row][col]);
+		}
+		printf("\n");
+	}
+}
+
+
+
+
+
+
+
+
+=> Strings:- A series of characters
+
+EX:-
+code:-
+
+#include<stdio.h>
+main()
+{
+	char greetings[]="hello, how are you";
+//	printf("%s",greetings); // print the string
+//	printf("%c",greetings[07]); // using index value
+		greetings[0]='k';
+		printf("%s",greetings);
+}
+
+
+
+
+
+
+
+
+Ex:-
+code:-
+
+#include<stdio.h>
+main()
+{
+	char carName[]="valvo";
+	int i;
+	for(i=0;i<5;i++)
+	{
+		printf("\n%c",carName[i]);
+	}
+}
+
+
+
+
+
+
+
+
+User print
+code:-
+
+#include<stdio.h>
+main()
+{
+	char name[20];
+	printf("Enter your name:- ");
+	gets(name);
+	printf("name = %s", name);
+}
+
+
+
+
+
+
+
+
+Lower case and upper case
+code:-
+
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char name[20];
+	printf("Enter your name:- ");
+	gets(name);
+	printf("name = %s", name);
+	
+	printf("\nlower case = %s", strlwr(name));
+	printf("\nupper case = %s", strupr(name));
+}
+
+
+
+
+
+
+
+
+Length of string
+code:-
+
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char name[20];
+	printf("Enter your name:- ");
+	gets(name);
+	printf("\nlength of string = %d", strlen(name));
+}
+
+
+
+
+
+
+
+
+Ex:-
+code:-
+
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char s1[20],s2[20];
+	printf("Enter s1:- ");
+	gets(s1);
+	printf("Enter s2:- ");
+	gets(s2);
+	if(strcmp(s1,s2)==0)
+	{
+		printf("Both the string are same");
+	}
+	else
+	{
+		printf("Both the string are not same");
+	}
+}
+
+
+
+
+
+
+
+
+Ex:-
+code:-
+
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char s1[20]="hello ";
+	char s2[20]="world";
+	strcat(s1,s2);
+	printf("%s",s1);
+}
+
+
+
+
+
+
+
+
+Ex:-
+code:-
+
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char s1[20]="hello world";
+	char s2[20];
+	strcpy(s2,s1);
+	printf("%s",s2);
+}
+
+
+
+
+
+
+
+
+Function:-
+
+Ex:-
+code:-
+
+#include<stdio.h>
+void greet()  // function declaration
+{
+	printf("Hello and welcome to functions\n");  // block of code
+}
+main()
+{
+	greet();  // function calling
+	greet();
+	greet();
+}
+
+
+
+
+
+
+
+
+Ex:-
+code:-
+
+#include<stdio.h>
+void sum()
+{
+	int a,b;
+	printf("Enter the value of a:- ");
+	scanf("%d",&a);
+	printf("Enter the value of b:- ");
+	scanf("%d",&b);
+	printf("The addition of a and b is %d\n",a+b);
+	
+}
+main()
+{
+	sum();
+	sum();
+	sum();
+}
+
+
+
+
+
+
+
+
+Ex:-
+code:-
+
+#include<stdio.h>
+void addition(int n1, int n2)  // parameters
+{
+	int ans;
+	ans= n1+n2;
+	printf("The ans is %d", ans);
+}
+main()
+{
+	addition(20,30);
+}
+
+
+
+
+
+
+
+
+Login system:-
+
+code:-
+
+#include<stdio.h>
+void login(char email[], char password[]);
+main()
+{
+	char e[20],p[20];
+	printf("Enter email:- ");
+	gets(e);
+	printf("Enter password:- ");
+	gets(p);
+	login(e,p);
+}
+void login(char email[], char password[])
+{
+	printf("\n Email:- %s",email);
+	printf("\n Password:- %s",password);
+}
+
+
+
+
+
+
+
+
+Without parameters and with return value
+
+code:-
+
+#include<stdio.h>
+int sum();
+main()
+{
+	int  r;
+	printf("\nWe are going to calculate the sum of two numbers:- ");
+	r=sum();
+	printf("%d",r);
+}
+int sum()
+{
+	int a,b;
+	printf("\nEnter the value  of a and b:- ");
+	scanf("%d %d",&a,&b);
+	return a+b;
+}
+
+
+
+
+
+
+
+
+Without parameters and with return value (square)
+
+code:-
+
+#include<stdio.h>
+int square();
+main()
+{
+	int result;
+	result=square();
+	printf("%d",result);
+}
+int square()
+{
+	int a;
+	printf("Enter the value of side:- ");
+	scanf("%d",&a);
+	return a*a;
+}
+
+
+
+
+
+
+
+
+With parameter and with return value
+
+code:-
+
+#include<stdio.h>
+int sum(int,int);
+main()
+{
+	int a,b,r;
+	printf("\n We are going to calculate the sum of two numbers:- ");
+	printf("\nEnter two numbers a and b:- ");
+	scanf("%d %d",&a,&b);
+	r=sum(a,b);
+	printf("\nThe sum is %d",r);
+}
+int sum(int a, int b)
+{
+	return a+b;
+}
+
+
+
+
+
+
+
+
+With parameter and with return value (average of 5)
+
+code:-
+
+#include<stdio.h>
+void average(int a, int b, int c, int d, int e);
+main()
+{
+	int a,b,c,d,e;
+	printf("Enter the value of a b c d e:- ");
+	scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+	average(a,b,c,d,e);
+}
+void average(int a,int b,int c,int d, int e)
+{
+  int result;
+  result=(a+b+c+d+e)/5;
+  printf("%d Is average of given numbers",result);
+}
+
+
+
+
+
+
+
+
+Inbuilt or library functions:-
+math- To perform mathmatical operations
+
+
+
+
+
+
+
+
+Ex:-
+code:-
+
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	printf("%f\n", sqrt(4)); // To find a square root
+	printf("%f\n",ceil(7.8)); // ceil
+	printf("%f\n",pow(4,3)); // power
+	printf("%f\n",sin(70)); // sin
+	printf("%f\n",cos(80)); // cos
+}
+
+
+
+
+
+
+
+
+=> Recursive function or recursion:-
+
+Ex:-
+code:-
+
+#include<stdio.h>
+int recurse(int x)
+{
+	if(x>=1)
+	{
+		printf("Hello\n");
+		recurse(x-1);
+	}
+}
+main()
+{
+	recurse(5);
+}
+
+
+
+
+
+
+
+
+print 1 to 10 using recursion
+code:-
+
+#include<stdio.h>
+int print_1to10(int x)
+{
+	if(x<=10)
+	{
+		printf("%d\n",x);
+		print_1to10(x+1);
+	}
+}
+main()
+{
+	print_1to10(1);
+}
+
+
+
+
+
+
+
+
+factorial using recursion
+code:-
+
+#include<stdio.h>
+int fact(int x)
+{
+	if(x>1)
+	{
+		return x*fact(x-1);
+	}
+}
+main()
+{
+	printf("%d",fact(5));
+}
+
+
+
+
+
+
+
+
+Pointers:-
+
+Ex:-
+code:-
+
+#include<stdio.h>
+main()
+{
+	int a=10,b=9;
+	int *p,*q;
+	p=&a;
+	q=&b;
+	printf("The value of a= %d\n",a);
+	printf("The value of a= %d\n",*p);
+	printf("The value of a= %x\n",p);
+	printf("The value of a= %x\n",&a);
+}
+
+
+
+
+
+
+
+
+addition using recursion
+
+code:-
+
+#include<stdio.h>
+main()
+{
+	int a=10,b=9;
+	int *p,*q;
+	p=&a;
+	q=&b;
+	printf("The value of a= %d\n",a);
+	printf("The value of a= %d\n",*q);
+	printf("%d + %d= %d",a,b,a+b);
+}
+
+
+
+
+
+
+
+
+swaping using recursion
+code:-
+
+#include<stdio.h>
+main()
+{
+	int a=10,b=9;
+	int *p,*q;
+	p=&a;
+	q=&b;
+	printf("a=%d b=%d\n", a,b);
+	printf("a=%d b=%d", *q,*p);
+}
+
+
+
+
+
+
+
+
+Structure:-
+
+Ex:-
+code:-
+
+#include<stdio.h>
+struct person
+{
+	int age;
+	char name[20];
+	float salary;
+}
+main()
+{
+	struct person p;
+	scanf("%d %s %f", &p.age, &p.name, &p.salary);
+	printf("age= %d\nname= %s\nsalary=%.2f",p.age,p.name,p.salary);
+}
+
+
+
+
+
+
+
+
+Task:- Create a bank by adding the following details:-
+1. Bank name:-
+2. Account number
+3. Account Holder name
+4. ATM pin
+
+code:-
+
+#include<stdio.h>
+struct bank
+{
+	 char name[20];
+	 int ac;
+	 char h[20];
+	 int p;
+}
+main()
+{
+	struct bank k;
+	printf("Enter your bank name:- ");
+	scanf("%s",&k.name);
+	printf("Enter your account number:- ");
+	scanf("%d",&k.ac);
+	printf("Enter your account holder name:- ");
+	scanf("%s",&k.h);
+	printf("Enter your ATM PIN:- ");
+	scanf("%d",&k.p);
+	printf("\n");
+	printf("bank name= %s\n",k.name);
+	printf("Account number= %d\n",k.ac);
+	printf("Account holder name= %s\n",k.h);
+	printf("ATM PIN= %d",k.p);
+}
