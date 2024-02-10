@@ -136,20 +136,22 @@ Types of Inheritance:-
 The inheritance in which a class can be derived from more than one class can have more than one base class in known as multiple inheritance
 
 		Base Class 1			Base Class 2
-			\					/
-			 \				    /
-			  \				   /
+			\	                  /
+			 \	       	         /
+			  \	      	        /
 				  Child Class
 
 
 4. Hierarchical Inheritance:- Hierarchical Inheritance is one base class and more than one derived class
 
 					   Class  A
-					/	       \
-				    / 	        \
-			    Class B	    		  Class C
-				/	  \			/		\
-			CLass D	  Class E	  Class F   Class G
+				      /               \
+				     /	               \
+				    / 	                \
+			         Class B	     Class C
+				 /       \            /      \
+				/	  \	     /	      \
+			     CLass D	Class E	   Class F   Class G
 
 
 5. Hybrid Inheritance:- It is a combination of one or more inheritance.
